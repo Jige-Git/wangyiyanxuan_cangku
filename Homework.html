@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>严选</title>
+	<link rel="stylesheet" type="text/css" href="style/css.css">
+	<link rel="stylesheet" type="text/css" href="font_q2rgb6thktf/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="font_281n1xck4wm/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="font_qtr60g6ragn/iconfont.css">
+	<style type="text/css">
+		.public-box{
+			width: 1100px;
+			margin: 5px auto;
+			
+		}
+		.MY-lipinhe{
+			font-size: 2.5em;
+			color:  #7c724e;	
+		}
+		.MY-xinhao{
+			font-size: 4em;
+			color:  #7c724e;
+
+		}
+		.head{
+			border: 1px solid #333333;
+			background-color: #333333;
+			color: #aa9f81;
+			font-size: 12px;
+		}
+		.head i{
+				margin-left: 10px;
+				}
+		.head .head-left a{
+			color: #aa9f81;
+			text-decoration:  underline;
+		}
+		.head .public-box .head-right a{
+			width: 100%;
+			color: #aa9f81;
+			padding-left: 10px;
+		}
+		.public-box::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.head-left{
+			width: 400px;
+			/* height: 50px; */
+			
+			float: left;
+			line-height: 2em;
+		}
+		.head-right{
+			width: 500px;
+			/* height: 50px; */
+			
+			float: right;
+			line-height: 2em;
+		}
+		.head-right>ul>li{
+			margin-right: 10px;
+			text-align: center;
+		}
+		.head-right>ul>li:nth-child(1)~li>a{
+				border-left: 1px solid #aa9f81;
+		}
+		.logo-box{
+			width: 650px;
+			
+			float: right;
+		}
+		.logo-box>div::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.logo-box>div div:nth-child(1){
+			float: left;
+			font-size: 3em;
+			width: 40px;
+			color: #7c724e;	
+		}
+		.logo-box .yanxuan{
+			float: left;
+			text-align: center;
+			font-size: 4em;
+			line-height: 1em;
+			width: 160px;
+			color: #7c724e;
+			margin-top: 30px;
+		}
+		.logo-box .search{
+			float: right;
+			position: relative;
+			right: 80px;
+			top: 40px;
+			width: 320px;
+			color: #7c724e;	
+			line-height: 2em;
+			font-size: 2em;
+		}
+
+		.logo-box .search::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.search>input{
+			border-style:none;
+			border-bottom: 1px solid #7c724e;
+			width: 250px;
+		}
+		.search div{
+			position: absolute;
+			right: 0;
+			top:0;
+		}
+		.logo-box .search div div{
+			width: 15px;
+			height: 15px;
+			background-color: red;
+			position: absolute;
+			right: -5px;
+			top: 12px;
+			border-radius: 50%;
+		}
+		.logo-box .search div div>span{
+			position: absolute;
+			left: 4px;
+			top: -20px;
+			font-size: 12px;
+			color:#ffffff;
+		}
+		.search-i{
+  			font-size: 0.8em;
+		}
+		.nav .public-box{
+			margin-top: 20px;
+		}
+		.nav .public-box>ul>li a{
+			color: #333333;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		.nav .public-box>ul a:hover{
+			color: #7c724e;
+		}
+		.nav li:hover >.secondary-menu{
+			display: block;
+		}
+		.nav .public-box>ul li{
+			width: 80px;
+			text-align: center;
+			height: 3em;
+		}
+		.one-menu>li>a::after{
+			height: 3px;
+			width: 2em;
+			background-color: #7c724e;
+			display: block;
+			position: relative;
+			content: "";
+			margin: 0 auto;
+			top: 5px;
+			display: none;
+		}
+		.one-menu>li>a::after:first-child{
+			display: block;
+		}
+		.one-menu>li:hover >a::after {
+			display: block;				
+		}
+		.nav .public-box>ul li li{
+			width: 13%;
+			height: 80px;
+			line-height: 1em;
+			font-weight: bold;
+			margin-top: 25px;
+		}
+		.advertising{
+			
+			
+			
+			text-align: center
+		}
+		.advertising>a>img{
+			width: 1520px; 
+			
+		}
+		.secondary-menu{
+			position: absolute;
+			background-color: #ffffff;
+			width: 100%;
+			left: 0;
+			display: none;
+			margin-top: 5px;
+		}
+		.secondary-menu>ul{
+			margin: 0 auto;
+			width: 1100px;
+		}
+		.secondary-menu p{
+			margin-top: 5px;
+		}
+		.right-advertising{
+			width: 70px;
+			height: 600px;
+			background-color: #ffffff;
+			position: fixed;
+			right: 0px;
+			top: 37px;
+		}
+		.right-advertising>ul{
+			height: 100%;
+		}
+		.right-advertising>ul>li{
+			text-align: center;
+			padding-top: 10px;
+			width: 100%;
+			position: relative;
+			padding-bottom: 10px;
+		}
+		.right-advertising>ul>li:first-child{
+			padding-top: 0;
+		}
+		.right-advertising>ul>li:hover .advertising-prompt{
+			display: block;
+		}
+		.advertising-prompt{
+			width: 250px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			top: 0px;
+			right: 80px;
+			display: none;
+		}
+		.right-advertising>ul li:nth-child(2) div{
+			color: #7c724e;
+			text-align: center;
+		}
+		.right-advertising>ul li:nth-child(2) img{
+			width: 70px;
+			margin-top: 5px;
+		}
+		.right-advertising>ul li:nth-child(2) span{
+			font-size: 12px;
+			margin-top: 5px;
+			color: #666666;
+		}
+		.right-advertising>ul li:nth-child(2)~li{
+			border-top: 1px solid #999999;
+
+		}
+		.right-advertising>ul  span{
+			font-size: 14px;
+			margin-top: 5px;
+			color: #666666;
+		}
+		.product-1 .public-box{
+			margin-top: 30px;
+		}
+		.product-1 ul{
+			margin-top:  10px;
+		}
+		.product-1 .manufacturers-ul>li:nth-child(1){
+			width: 360px;
+			height: 330px;
+			background-color: #faddd9;
+		}
+		.product-1 .manufacturers-ul>li:nth-child(2){
+			width:  360px;
+			height: 330px;
+			margin:0 10px 0 10px ;
+			background-color: #edcc7d;
+		}
+		.product-1 .manufacturers-ul>li:nth-child(3){
+			width:  360px;
+			height: 160px;
+			background-color: #e9c3c2;
+		}
+		.product-1 .manufacturers-ul>li:nth-child(4){
+			margin-top: 10px;
+			width: 360px;
+			height: 160px;
+			background-color: #f8e5d6;
+		}
+		.product-1-head h1{
+			float: left;
+		}
+		.product-1-head>div:nth-child(2){
+			color: #888888;
+			position: relative;
+			top: 15px;
+			left: 40px;
+			float:left;
+		}
+		 .product-1-head>div:nth-child(3){
+			color: #888888;
+			position: relative;
+			top: 15px;
+			float: right;
+		}
+		.product-1-head::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.manufacturers-ul .manufacturers-li >div:nth-child(1){
+			margin-top: 30px;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: 2em;
+			color: #7c724e;
+		}
+		.manufacturers-ul .manufacturers-li >div:nth-child(2){
+				width: 60px;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 40px;
+				color: #7c724e;
+				border-top: 1px solid #7c724e;
+		}
+		.product-1 .new-goods-ul>li{
+			width: 265px;
+			height: 300px;
+			background-color: #76c79c;
+			margin-right: 10px;
+		}
+		.new-goods{
+			margin-top: 40px;
+		}
+
+		.recommended{
+			background-color: #f8f1eb;
+			margin-top: 20px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+		}
+		.recommended .recommended-ul{
+			margin-top: 10px;
+		}
+		 li div{
+			text-align: center;
+		}
+		.commodity-description div:nth-child(1){
+			width: 60px;
+			height: 20px;
+			background-color: #e47547;
+			margin:0 auto;
+			color: #ffffff;
+		}
+		.commodity-description div:nth-child(2){
+			font-weight: bold;
+			color:#333333;
+			margin-top: 10px;
+			font-size: 1.1em;
+		}
+		.commodity-description div:nth-child(3){
+			color: red;
+			margin-top: 5px;
+			
+		}
+
+		.recommended-ul-li-div{
+			margin-top: 100px;
+		}
+		.hot{
+			width: 150px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.hot div:nth-child(1){
+			background-color: #e39e59;
+			color: #ffffff;
+			width: 4.5em;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.hot>div:nth-child(2){
+			background-color: #e47547;
+			margin:0 auto;
+			color: #ffffff;
+			width: 4.2em;
+			
+		}
+		.hot>div:nth-child(3){
+			font-weight: bold;
+			color:#333333;
+			position: relative;
+			top: 10px;
+			font-size: 1.2em;
+
+		}
+		.hot>div:nth-child(4){
+			color: red;
+			margin-top: 15px;
+		}
+		
+		.hot>div:nth-child(1){
+			float: left;	
+		}
+		.hot>div:nth-child(2){
+			float: left;	
+		}
+		.hot::after{
+				content: "";
+				display: block;
+				clear: both;
+		}
+		.recommended .recommended-ul>li:nth-child(1){
+			width: 400px;
+			height: 530px;
+			background-color: #ffffff;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+		.recommended .recommended-ul>li:nth-child(1)~li{
+			width: 220px;
+			height: 260px;
+			background-color: #ffffff;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+		.recommended .product-1-head ul>li{
+			color: #888888;
+			margin-left: 40px;
+		}
+		.recommended .product-1-head ul>li a::after{
+			height: 3px;
+			width: 4em;
+			background-color: #7c724e;
+			position: relative;
+			content: "";
+			margin: 0 auto;
+			top: 5px;
+			display: none;
+		}
+		.recommended .product-1-head ul>li:hover>a::after{
+			display: block;
+		}
+		.product-1 .product-1-head a{
+			color: #888888;
+		}
+		.product-1-head a:hover{
+			color: #7c724e;
+		}
+		.diet-box .diet-content>ul li:first-child{
+			width: 1090px;
+			height: 300px;
+			background-color: #eefef1;
+			background:url("images/yinshi.jpg");
+		}
+		.diet-box .diet-content>ul li:first-child~li{
+			width: 265px;
+			margin-right: 10px;
+			background-color: #f7c9cb;
+			height: 350px;
+			margin-top: 15px;
+			margin-bottom: 20px;
+		}
+		.diet-head{
+			width: 1090px;
+		}
+		.diet-head>h1{
+			float: left;
+			margin-bottom: 15px;
+		}
+		.diet-head>div{
+			float: right;
+			text-align: center;
+			height: 51.8px;
+			width: 50%;
+			line-height: 51.8px;
+		}
+		.diet-head>div>ul>li>a{
+			margin-right: 10px;
+			color: #333333;
+		}
+		.diet-head>div>ul>li:hover>a{
+			color: #7c724e;
+		}
+		.diet-head::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.feedback-box{
+			height: 300px;
+			background-color: #f5f5f5;
+		}
+		.bottom{
+			height: 200px;
+			background-color: #424242;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="head">
+		<div class="public-box">
+			<div class="head-left">
+				<span>好的生活，没那么贵</span>
+				<i class="iconfont icon-laba"></i>
+				<a href="#">福利，下载严选APP，抢1元包邮团</a>
+			</div>
+			<div class="head-right">
+				<ul>
+					<li> <a href="#"> 登录</a></li>
+					<li> <a href="#"> 注册</a></li>
+					<li> <a href="#"> 我的订单</a></li>
+					<li> <a href="#"> 会员</a></li>
+					<li> <a href="#"> 甄选家</a></li>
+					<li> <a href="#"> 企业采购</a></li>
+					<li> <a href="#"> 客户服务</a><i class="iconfont icon-down-copy-copy"></i> 
+					
+					</li>
+					<li> <a href="#">APP</a><i class="iconfont icon-shouji"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="public-box">
+			<div  class="logo-box">
+				<div>
+					<div>网易</div>
+					<div class="yanxuan">严 选</div>
+					<div class="search">
+						<input type="text" name="sousuo">
+						<i class="iconfont icon-sousuo search-i"></i>
+						<div>
+							<i class="iconfont icon-gouwuche search-i"></i>
+							<div> <span>0</span></div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+	<div class="nav">
+		<div class="public-box">
+			<ul class="one-menu">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">居家</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/xl.png"><p>夏凉</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/cp.png"><p>床品被套</p></a> 
+							</li>
+							<li><a href="#"><img src="images/bz.png"><p>枕被</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/jj.png"><p>家具</p></a> </li>
+							<li><a href="#"><img src="images/dj.png"><p>灯具</p></a> 
+							</li>
+							<li><a href="#"><img src="images/sn.png"><p>收纳</p></a> </li>
+							<li><a href="#"><img src="images/by.png"><p>布艺软装</p></a> </li>
+							<li><a href="#"><img src="images/js.png"><p>家饰</p></a>
+							</li>
+							<li><a href="#"><img src="images/lx.png"><p>旅游用品</p></a> </li>
+							<li><a href="#"><img src="images/ls.png"><p>晾晒除味</p></a></li>
+							<li><a href="#"><img src="images/yl.png"><p>家庭医疗</p></li></a>
+							<li><a href="#"><img src="images/cw.png"><p>宠物</p></li></a> 
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">鞋包配饰</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/xinglixiang.png"><p>行李箱</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/nvshibao.png"><p>女式包</p></a> 
+							</li>
+							<li><a href="#"><img src="images/nanshibao.png"><p>男士包</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/qianbao.png"><p>钱包</p></a> </li>
+							<li><a href="#"><img src="images/nvxie.png"><p>女鞋</p></a> 
+							</li>
+							<li><a href="#"><img src="images/nanxie.png"><p>男鞋</p></a> </li>
+							<li><a href="#"><img src="images/tuoxie.png"><p>拖鞋</p></a> </li>
+							<li><a href="#"><img src="images/xiepei.png"><p>鞋配</p></a>
+							</li>
+							<li><a href="#"><img src="images/wazi.png"><p>袜子</p></a> </li>
+							<li><a href="#"><img src="images/siwa.png"><p>丝袜</p></a></li>
+							<li><a href="#"><img src="images/peishi.png"><p>配饰</p></li></a>
+							<li><a href="#"><img src="images/yanjing.png"><p>眼镜</p></li></a> 
+							<li><a href="#"><img src="images/weijin.png"><p>围巾</p></li></a> 
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">服装</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/yessing.png"><p>yessing衣服</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/TXU.png"><p>T恤</p></a> 
+							</li>
+							<li><a href="#"><img src="images/yundong.png"><p>运动</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/niuzai.png"><p>牛仔</p></a> </li>
+							<li><a href="#"><img src="images/nvshishangzhuang.png"><p>女式上装</p></a> 
+							</li>
+							<li><a href="#"><img src="images/nvshiwaitao.png"><p>女式外套</p></a> </li>
+							<li><a href="#"><img src="images/nvshixiazhuang.png"><p>女式下装</p></a> </li>
+							<li><a href="#"><img src="images/nanshishangzhuang.png"><p>男士上装</p></a>
+							</li>
+							<li><a href="#"><img src="images/nanshixiazhuang.png"><p>男士下装</p></a> </li>
+							<li><a href="#"><img src="images/nanshiwaitao.png"><p>男士外套</p></a></li>
+							<li><a href="#"><img src="images/nanshineiyiku.png"><p>男士内衣裤</p></li></a>
+							<li><a href="#"><img src="images/nvshineiyiku.png"><p>女式内衣裤</p></li></a> 
+							<li><a href="#"><img src="images/nanshijujiafu.png"><p>男式居家服</p></li></a> 
+							<li><a href="#"><img src="images/nvshijujiafu.png"><p>女式居家服</p></li></a> 
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">电器</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/shenghuodianqi.png"><p>生活电器</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/chufangdianqi.png"><p>厨房电器</p></a> 
+							</li>
+							<li><a href="#"><img src="images/gehujiankang.png"><p>个护健康</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/shuma.png"><p>数码</p></a> </li>
+							<li><a href="#"> <img src="images/yingyinyule.png"><p>影音娱乐</p></a> </li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">洗护</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/zhipinshijin.png"><p>纸品湿巾</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/jiatingqingjie.png"><p>家庭清洁</p></a> 
+							</li>
+							<li><a href="#"><img src="images/shengliyongpin.png"><p>生理用品</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/yushiyongju.png"><p>浴室用具</p></a> </li>
+							<li><a href="#"><img src="images/maojin.png"><p>毛巾</p></a> 
+							</li>
+							<li><a href="#"><img src="images/meizhuang.png"><p>美妆</p></a> </li>
+							<li><a href="#"><img src="images/xiangfen.png"><p>香氛</p></a> </li>
+							<li><a href="#"><img src="images/mianbukouqianghuli.png"><p>面部口腔护理</p></a>
+							</li>
+							<li><a href="#"><img src="images/shentihuli.png"><p>身体护理</p></a> </li>
+							<li><a href="#"><img src="images/xifahufa.png"><p>洗发护发</p></a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">饮食</a>
+					<div class="secondary-menu">
+						<ul>
+							<li>
+								<a href="#"><img src="images/tianpinxianhua.png"><p>甜品鲜花</p></a> 
+							</li>
+							<li>
+								<a href="#"><img src="images/gaodian.png"><p>糕点</p></a> 
+							</li>
+							<li><a href="#"><img src="images/xiaoshi.png"><p>小食</p></a> 
+							</li>
+							<li><a href="#"> <img src="images/jianguochaohuo.png"><p>坚果炒货</p></a> </li>
+							<li><a href="#"><img src="images/guogan.png"><p>果干</p></a> 
+							</li>
+							<li><a href="#"><img src="images/rouleilingshi.png"><p>肉类零食</p></a> </li>
+							<li><a href="#"><img src="images/chongyin.png"><p>冲饮</p></a> </li>
+							<li><a href="#"><img src="images/mingcha.png"><p>茗茶</p></a>
+							</li>
+							<li><a href="#"><img src="images/jiushuiyinliao.png"><p>酒水饮料</p></a> </li>
+							<li><a href="#"><img src="images/fangbianshipin.png"><p>方便食品</p></a></li>
+							<li><a href="#"><img src="images/shicai.png"><p>食材</p></a> </li>
+							<li><a href="#"><img src="images/tiaowei.png"><p>调味</p></a>
+							</li>
+							<li><a href="#"><img src="images/zibubaojian.png"><p>滋补保健</p></a> </li>
+							<li><a href="#"><img src="images/shengxian.png"><p>生鲜</p></a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">餐厨</a>
+					<div class="secondary-menu">
+						<ul>
+							<li><a href="#"><img src="images/shuijubeihu.png"><p>水具杯壶</p></a>
+							</li>
+							<li><a href="#"><img src="images/canju.png"><p>餐具</p></a> </li>
+							<li><a href="#"><img src="images/guoju.png"><p>锅具</p></a></li>
+							<li><a href="#"><img src="images/qingjiebaoxian.png"><p>清洁保鲜</p></a> </li>
+							<li><a href="#"><img src="images/chufangpeijian.png"><p>厨房配件</p></a>
+							</li>
+							<li><a href="#"><img src="images/daojianzhenban.png"><p>刀剪砧板</p></a> </li>
+							<li><a href="#"><img src="images/chajukafeijujiuju.png"><p>茶具咖啡具酒具</p></a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">婴童</a>
+					<div class="secondary-menu">
+						<ul>
+							<li><a href="#"><img src="images/shuqihaowu.png"><p>暑期好物</p></a>
+							</li>
+							<li><a href="#"><img src="images/xinshengerfuzhuang.png"><p>新生儿服装</p></a> </li>
+							<li><a href="#"><img src="images/xiaotongfuzhuang.png"><p>小童服装</p></a> </li>
+							<li><a href="#"><img src="images/zhongdatongfuzhuang.png"><p>中大童服装</p></a>
+							</li>
+							<li><a href="#"><img src="images/neiyidapei.png"><p>内衣搭配</p></a> </li>
+							<li><a href="#"><img src="images/tongxietongbao.png"><p>童鞋童包</p></a></li>
+							<li><a href="#"><img src="images/yingtongxihu.png"><p>婴童洗护</p></a>
+							</li>
+							<li><a href="#"><img src="images/yunchan.png"><p>孕产</p></a> </li>
+							<li><a href="#"><img src="images/qinju.png"><p>寝居</p></a></li>
+							<li><a href="#"><img src="images/weiyang.png"><p>喂养</p></a> </li>
+							<li><a href="#"><img src="images/wanju.png"><p>玩具</p></a></li>
+							<li><a href="#"><img src="images/yingtongchuxing.png"><p>婴童出行</p></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">文体</a>
+					<div class="secondary-menu">
+						<ul>
+							<li><a href="#"><img src="images/wenju.png"><p>文具</p></a>
+							</li>
+							<li><a href="#"><img src="images/yundonghuwai.png"><p>运动户外</p></a> </li>
+							<li><a href="#"><img src="images/changpian.png"><p>唱片</p></a> </li>
+							<li><a href="#"><img src="images/lipinka.png"><p>礼品卡</p></a>
+							</li>
+							<li><a href="#"><img src="images/youxidianka.png"><p>游戏点卡</p></a> </li>
+							<li><a href="#"><img src="images/baoxuezhoubian.png"><p>暴雪周边</p></a></li>
+							<li><a href="#"><img src="images/wodeshijie.png"><p>我的世界</p></a>
+							</li>
+							<li><a href="#"><img src="images/menghuanxiyou.png"><p>梦幻西游</p></a> </li>
+							<li><a href="#"><img src="images/dahuaxiyou.png"><p>大话西游</p></a></li>
+							<li><a href="#"><img src="images/yinyangshi.png"><p>阴阳师</p></a> </li>
+							<li><a href="#"><img src="images/youxibiaoqing.png"><p>游戏表情</p></a></li>
+							<li><a href="#"><img src="images/yingshizhoubian.png"><p>影视周边</p></a>
+							</li>
+							<li><a href="#"><img src="images/dongmandianwan.png"><p>动漫电玩</p></a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+				<a href="#">特色</a>
+				<div class="secondary-menu">
+						<ul>
+							<li><a href="#"><img src="images/ribenguan.png"><p>日本馆</p></a>
+							</li>
+							<li><a href="#"><img src="images/hanguoguan.png"><p>韩国馆</p></a> </li>
+							<li><a href="#"><img src="images/dongnanyaguan.png"><p>东南亚馆</p></a> </li>
+							<li><a href="#"><img src="images/oumeiguan.png"><p>欧美馆</p></a>
+							</li>
+							<li><a href="#"><img src="images/aoxinguan.png"><p>澳新馆</p></a> </li>
+							<li><a href="#"><img src="images/zhizaoguan.png"><p>智造馆</p></a></li>
+							<li><a href="#"><img src="images/chunfengguan.png"><p>春风馆</p></a>
+							</li>
+							<li><a href="#"><img src="images/weiyangguan.png"><p>味央馆</p></a> </li>
+							<li><a href="#"><img src="images/yunyinyuezhoubianguan.png"><p>云音乐周边管</p></a></li>
+							<li><a href="#"><img src="images/Yessingguan.png"><p>Yessing馆</p></a> </li>
+							<li><a href="#"><img src="images/yanxuantuijianguan.png"><p>严选推荐管</p></a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">为你严选</a></li>
+				<li><a href="#">众筹</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="advertising">
+	<a href="#"><img src="images/1.jpg"> </a>	
+	</div>
+	<div class="product-1">
+		<div class="public-box">
+			<div class="manufacturers">
+			<div class="product-1-head">
+				<h1>产品制造商</h1>
+				<div>工厂直达消费者，剔除产品溢价</div>
+				<div><a href="#">更多制造商   ></a> </div>
+			</div>
+			<ul class="manufacturers-ul">
+				<li>
+				<div class="manufacturers-li">
+					<div>CK制造商</div>
+					<div>25元起</div> 
+				</div> 
+				</li>
+				<li>
+				<div class="manufacturers-li">
+					<div>Kenneth Cole制造商</div>
+					<div>209元起</div> 
+				</div>
+				</li>
+				<li>Ralph Lauren制造商</li>
+				<li>海外制造商</li>
+			</ul>
+			</div>
+			<div class="new-goods">
+			<div class="product-1-head">
+				<h1>新品首发</h1>
+				<div>为你寻觅世间好物</div>
+				<div><a href="#">更多新品   ></a> </div>
+			</div>
+			<ul class="new-goods-ul">
+				<li>
+					<div>
+						<img src="images/qiximeigui.jpg">
+					</div> 
+				</li>
+				<li>
+					<div>
+						<img src="images/zhenzhu.jpg">
+					</div> 
+				词典笔</li>
+				<li>
+					<div>
+						<img src="images/zhenzhuerdin.jpg">
+					</div> 
+					耳机</li>
+				<li>
+					<div>
+						<img src="images/meijiu.jpg">
+					</div> 
+					枕头</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="recommended">
+		<div class="public-box">
+			<div class="product-1-head">
+				<h1>人气推荐</h1>
+				<div>
+					<ul>
+						<li><a href="#">编辑推荐</a> </li>
+						<li><a href="#">热销总榜</a> </li>
+					</ul>
+				</div>
+				
+			</div>
+			<ul class="recommended-ul">
+				<li>
+				<a href="#">
+					<div>
+						<img src="images/bobei.png">
+					</div> 
+					<div class="recommended-ul-li-div">
+						<div class="hot">
+							<div>爆品</div>
+							<div class="time-limit">居家特惠</div>
+							<div>薄被</div>
+							<div class="price">价格</div>
+						</div>
+						
+					</div>
+				</a>
+				</li>
+				<li>
+					<a href="#">
+						<div>
+							<img src="images/xiangzi.png">
+						</div> 
+						<div class="hot">
+							<div>爆品</div>
+							<div class="time-limit">限时抢购</div>
+							<div>拉杆箱</div>
+							<div class="price">价格</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div>
+							<img src="images/yanwo.png">
+						</div>
+						<div class="commodity-description">
+							<div class="time-limit">限时抢购</div>
+							<div >燕窝</div>
+							<div class="price">价格</div>
+						</div>
+					</a>
+					</li>
+				<li>
+					<a href="#">
+						<div>
+							<img src="images/zuodian.png">
+							
+						</div>
+						<div class="commodity-description">
+							<div class="time-limit">限时抢购</div>
+							<div >坐垫</div>
+							<div class="price">价格</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<div>
+						<img src="images/yashua.png">
+					</div>
+					<div class="commodity-description">
+							<div class="time-limit">限时抢购</div>
+							<div >牙刷</div>
+							<div class="price">价格</div>
+					</div></a>
+				</li>
+				<li>
+					<a href="#">
+					<div>
+						<img src="images/mianmaojin.png">
+					</div>
+					<div class="hot">
+							<div>爆品</div>
+							<div class="time-limit">限时抢购</div>
+							<div>绵毛巾</div>
+							<div class="price">价格</div>
+						</div>
+				</a></li>
+				<li>
+				  <a href="#">
+				  <div>
+						<img src="images/zhijin.png">
+					</div>
+					<div class="commodity-description">
+							<div class="time-limit">限时抢购</div>
+							<div >纸巾</div>
+							<div class="price">价格</div>
+						</div>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="diet">
+			<div class="public-box">
+				<div class="diet-box">
+					<div class="diet-head">
+						<h1>饮食</h1>
+						<div>
+							<ul>
+								<li><a href="#">甜品鲜花&nbsp; /</a></li></a>
+								<li><a href="#">糕点 &nbsp;/</a></li>
+								<li><a href="#">小食 &nbsp;/</a></li>
+								<li><a href="#">坚果炒货 &nbsp;/</a></li>
+								<li><a href="#">果干 &nbsp;/</a></li>
+								<li><a href="#">肉类零食&nbsp; /</a></li>
+								<li><a href="#">冲饮</a></li>
+								<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;查看更多>></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="diet-content">
+						<ul>
+							<li></li>
+							<li>
+								<img src="images/qiaokeli.png">
+								<div class="hot">
+									<div>七夕推荐</div>
+									<div class="time-limit">美食特惠</div>
+									<div>巧克力</div>
+									<div class="price">价格</div>
+								</div>
+							</li>
+							<li>
+								<img src="images/cuicuixia.png">
+								<div class="commodity-description">
+									<div class="time-limit">N元任选</div>
+									<div >脆脆虾</div>
+									<div class="price">价格</div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ningmengpian.png">
+								<div class="commodity-description">
+									<div class="time-limit">N元任选</div>
+									<div >柠檬片</div>
+									<div class="price">价格</div>
+								</div>
+							</li>
+							<li>
+								<img src="images/chunniunai.png">
+								<div class="hot">
+									<div>爆品</div>
+									<div class="time-limit">限时抢购</div>
+									<div>纯牛奶</div>
+									<div class="price">价格</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+	<div class="feedback-box">
+		
+	</div>
+	<div class="bottom">
+		
+	</div>
+	<div class="right-advertising">
+		<ul>
+			<li>
+				<a href=""><img src="images/qixi.gif"></a>
+			</li>
+			<li> 
+				<a href=""><i class="iconfont icon-gift MY-lipinhe"></i></a>
+				<div>新人有礼</div>
+				<img src="images/erweimaxiazai.png">
+				<span>扫码领 <font color="red">APP1000元新人礼</font></span>
+				<div class="advertising-prompt"></div>
+			</li>
+			
+			<li>
+				<a href="">
+					<i class="iconfont icon-xinhao MY-xinhao"></i>
+				</a>	
+				<span>订阅电子刊</span>
+				<div class="advertising-prompt">	</div>
+			</li>
+			<li>
+			<a href="">
+					<i class="iconfont icon-zaixiankefu MY-xinhao"></i>
+				</a>	
+				<span>在线客服</span>
+			</li>
+
+		</ul>
+	</div>
+
+</body>
+</html>
