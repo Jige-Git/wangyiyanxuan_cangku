@@ -6,50 +6,24 @@
 	<style type="text/css">
 	.nav{
 		width: 880px;
+		height: 100px;
 		margin: 0 auto;
 		text-align: center;
+		background-color: red
 	}
-	.nav>ul::after{
-		content: "";
-		display: block;
-		clear: both;
-	}
-	ul{
-		width: 320px;
-		margin: 0px;
-	}
-
-		.nav>ul>li{
-			width: 80px;
-			height: 60px;
-			list-style:none;
-			text-align: center;
-			float: left;
-			
-			box-sizing: border-box;
-		}
-		.nav>ul>li:first-child{
-			background-color: pink;
-			height: 120px;
-		}
-		.nav>ul>li:first-child~li{
-			background-color: red;
-			border: 1px solid yellow;
-
-		}
 	</style>
+	<script type="text/javascript">
+		function a(){
+			var nav1 = document.getElementById("aa")
+				nav1.style.color='pink';
+			
+		}
+	</script>
 </head>
 <body>
-	<div class="nav">
-		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
-		</ul>
+	<div class="nav" id="aa" >
+		但是公司
 	</div>
+	<button onclick="a()">按钮</button>
 </body>
 </html>

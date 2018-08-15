@@ -10,17 +10,17 @@
 	<link rel="stylesheet" type="text/css" href="font_g4wer98cchu/iconfont.css">
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font_13cobm8q9dqk/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="font_lahfptwg48/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="font_ilxceesimis/iconfont.css">
+	<!-- <script type="text/javascript" src="js/wangyi-js.js"></script> -->
+    <script type="text/javascript" src="js/wangyi-js.js" defer="true"></script>
 	<style type="text/css">
 		.MY-lipinhe{
 			font-size: 2.5em;
-			color:  #7c724e;
-			
+			color:  #7c724e;		
 		}
 		.MY-xinhao{
 			font-size: 4em;
 			color:  #7c724e;
-
 		}
 		.search-i{
   			font-size: 0.8em;
@@ -38,7 +38,6 @@
 	</style>
 </head>
 <body>
-	
 	<div class="head">
 		<div class="public-box">
 			<div class="head-left">
@@ -48,7 +47,7 @@
 			</div>
 			<div class="head-right">
 				<ul>
-					<li> <a href="#"> 登录</a></li>
+					<li> <a href="#" onclick="login_page_state()"> 登录</a></li>
 					<li> <a href="#"> 注册</a></li>
 					<li> <a href="#"> 我的订单</a></li>
 					<li> <a href="#"> 会员</a></li>
@@ -632,7 +631,10 @@
 				<div>何为严选</div>
 				<p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
 				<div>
-					关注我们：<i class="iconfont icon-yixin MY-weixin"></i><i class="fa fa-weixin MY-weixin"></i><i class="fa fa-weibo MY-weibo"></i>
+					关注我们：
+					<i class="iconfont icon-yixin MY-weixin"></i>
+					<i class="fa fa-weixin MY-weixin"></i>
+					<i class="fa fa-weibo MY-weibo"></i>
 				</div>
 			</div>
 			<div class="feedback-box-right ">
@@ -709,6 +711,88 @@
 
 		</ul>
 	</div>
+	<div class="login" id="login-page" >
+		<div class="login-box">
+			<div class="login-way">
+				<ul>
+					 <li><a href="#" onclick="mobile_phone_login()">手机登录</a></li>
+					<li><a href="#" onclick="email_login()">邮箱登录</a></li>
+				</ul>
+			</div>
+			<i class="iconfont icon-cuohao" onclick="login_page_state()"></i>
+			<div class="mobile-phone-login-way" id="way">
+					<a href="#" onclick="mobile_phone_login_way()" id="way_string">使用密码验证登录</a> 
+				</div>
+		<div class="mobile-phone-login" id="mobile-phone">
+				
+				<div class="mobile-phone-number-box">
+					<div class="mobile-phone-icon">
+						<i class="iconfont icon-shouji"></i>
+					</div>
+					<div class="mobile-phone-input">
+						<input type="text" name="number" placeholder="输入手机号">
+					</div>
+				</div>
+				<div class="picture-validation">
+					
+					<img src="images/huakuai.png">
+					<div>按住滑块，拖动完成拼图</div>
+				</div>
+				<div class="validation-box">
+					<input type="text" name="validation-number">
+					<button><a href="#">获取验证吗</a> </button>
+				</div>
+				
+		</div>
 
+		<div class="email-login" id="email">
+				<div class="email-input-box">
+					<div>
+						<i class="iconfont icon-yonghu"></i> 
+					</div>
+					<div> 
+						<input type="text" name="email-name" id="user"> 
+					</div>
+					<a href="#"><i class="iconfont icon-shanchu"></i></a> 
+				</div>
+			
+			
+				<div class="email-input-box">
+					<div>
+						<i class="iconfont icon-icon"></i> 
+					</div>
+					<div> 
+						<input type="text" name="email-password" id="password"> 
+					</div>
+					<a href="#"><i class="iconfont icon-shanchu"></i></a> 
+				</div>
+			
+			
+		</div>
+		<div class="login-button-box">
+					
+					<button class="login-button">
+						<a href="#">登 录</a> 
+					</button>	
+				</div>
+			<div class="login-foot">
+				<div class="login-foot-left">
+					<ul>
+						<li><a href="#"><i class="iconfont icon-yingdaicon04"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-qq"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-weibo"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-yi"></i> </a></li>
+					</ul>
+				</div>
+				<div class="login-foot-right">
+					<ul>
+						<li><a href="#">邮箱注册</a></li>
+						<li><a href="#">忘记密码？</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
