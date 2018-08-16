@@ -48,7 +48,7 @@
 			<div class="head-right">
 				<ul>
 					<li> <a href="#" onclick="login_page_state()"> 登录</a></li>
-					<li> <a href="#"> 注册</a></li>
+					<li> <a href="#" onclick="registered_up()"> 注册</a></li>
 					<li> <a href="#"> 我的订单</a></li>
 					<li> <a href="#"> 会员</a></li>
 					<li> <a href="#"> 甄选家</a></li>
@@ -606,6 +606,7 @@
 				
 			</div>
 	</div>
+
 	<div class="feedback-box">
 		<div class="public-box">
 			<div class="feedback-box-left">
@@ -712,7 +713,7 @@
 		</ul>
 	</div>
 	<div class="login" id="login-page" >
-		<div class="login-box">
+		<div class="login-box" id="login">
 			<div class="login-way">
 				<ul>
 					 <li><a href="#" onclick="mobile_phone_login()">手机登录</a></li>
@@ -723,7 +724,90 @@
 			<div class="mobile-phone-login-way" id="way">
 					<a href="#" onclick="mobile_phone_login_way()" id="way_string">使用密码验证登录</a> 
 				</div>
-		<div class="mobile-phone-login" id="mobile-phone">
+			<div class="mobile-phone-login" id="mobile-phone">
+				
+				<div class="mobile-phone-number-box">
+					<div class="mobile-phone-icon">
+						<i class="iconfont icon-shouji"></i>
+					</div>
+					<div class="mobile-phone-input">
+						<input type="text" name="number" placeholder="输入手机号">
+					</div>
+				</div>
+				<div class="picture-validation">
+					
+					<img src="images/huakuai.png">
+					<div>按住滑块，拖动完成拼图</div>
+				</div>
+				<div class="validation-box">
+					<input type="text" name="validation-number">
+					<button><a href="#">获取验证吗</a> </button>
+				</div>			
+			</div>
+			<div class="email-login" id="email">
+				<div class="email-input-box">
+					<div>
+						<i class="iconfont icon-yonghu"></i> 
+					</div>
+					<div> 
+						<input type="text" name="email-name" placeholder="邮箱账号"> 
+						<a href="#">
+						<i class="iconfont icon-shanchu" id="user-shanchu"></i>
+					</a> 
+					</div>
+				</div>
+				<div class="email-input-box">
+					<div>
+						<i class="iconfont icon-icon"></i> 
+					</div>
+					<div> 
+						<input type="text" name="email-password" id="password" placeholder="请输入密码"> 
+						<a href="#">
+						<i class="iconfont icon-shanchu" id="password-shanchu"></i>
+					</a> 
+					</div>
+					
+				</div>			
+			</div>
+			<div class="login-button-box">
+					
+					<button class="login-button">
+						<a href="#">登 录</a> 
+					</button>	
+			</div>
+			<div class="login-foot">
+				<div class="login-foot-left">
+					<ul>
+						<li><a href="#"><i class="iconfont icon-yingdaicon04"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-qq"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-weibo"></i> </a></li>
+						<li><a href="#"><i class="iconfont icon-yi"></i> </a></li>
+					</ul>
+				</div>
+				<div class="login-foot-right">
+					<ul>
+						<li><a href="#"  onclick="registered_up()">手机快捷注册</a></li>
+						<li><a href="#">忘记密码？</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="registered-box" id="registered">
+			<div class="registered-way">
+				<div class="registered-header-left">
+					手机注册
+				</div>
+				<div class="registered-header-right">
+					<ul>
+						<li><a href="wangyi-email-registered.html#"
+								target="blank" 
+						onclick="login_page_state()">邮箱注册</a></li>
+						<li><a href="#" onclick="directly_login()">直接登录</a></li>
+					</ul>
+				</div>
+				<i class="iconfont icon-cuohao" onclick="login_page_state()"></i>
+			</div>
+			<div class="mobile-phone-login" id="mobile-phone">
 				
 				<div class="mobile-phone-number-box">
 					<div class="mobile-phone-icon">
@@ -742,57 +826,29 @@
 					<input type="text" name="validation-number">
 					<button><a href="#">获取验证吗</a> </button>
 				</div>
-				
-		</div>
 
-		<div class="email-login" id="email">
-				<div class="email-input-box">
-					<div>
-						<i class="iconfont icon-yonghu"></i> 
-					</div>
-					<div> 
-						<input type="text" name="email-name" id="user"> 
-					</div>
-					<a href="#"><i class="iconfont icon-shanchu"></i></a> 
-				</div>
-			
-			
 				<div class="email-input-box">
 					<div>
 						<i class="iconfont icon-icon"></i> 
 					</div>
 					<div> 
-						<input type="text" name="email-password" id="password"> 
+						<input type="text" name="email-password" id="password" placeholder="请输入密码"> 
 					</div>
 					<a href="#"><i class="iconfont icon-shanchu"></i></a> 
 				</div>
-			
-			
-		</div>
-		<div class="login-button-box">
+
+			</div>
+			<div class="login-button-box">
 					
 					<button class="login-button">
-						<a href="#">登 录</a> 
-					</button>	
-				</div>
-			<div class="login-foot">
-				<div class="login-foot-left">
-					<ul>
-						<li><a href="#"><i class="iconfont icon-yingdaicon04"></i> </a></li>
-						<li><a href="#"><i class="iconfont icon-qq"></i> </a></li>
-						<li><a href="#"><i class="iconfont icon-weibo"></i> </a></li>
-						<li><a href="#"><i class="iconfont icon-yi"></i> </a></li>
-					</ul>
-				</div>
-				<div class="login-foot-right">
-					<ul>
-						<li><a href="#">邮箱注册</a></li>
-						<li><a href="#">忘记密码？</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+						<a href="#">注 册</a> 
+					</button>
+					<div class="registered-agreement">
+						<span>我同意<a href="#">《服务条款》</a>和<a href="#">《网易隐私政策》</a> </span>
+					</div>	
+			</div>	
 	</div>
+
 </body>
 
 </html>
