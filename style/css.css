@@ -6,6 +6,7 @@ body,p,h1{
 	margin: 0px;
 	padding: 0px;
 }
+input:focus { outline: none; } 
 a{
 	text-decoration: none;
 	color: #333333;
@@ -178,6 +179,7 @@ li{
 		}
 		.nav li:hover >.secondary-menu{
 			display: block;
+			z-index: 1;
 		}
 		.nav .public-box>ul li{
 			width: 80px;
@@ -209,12 +211,70 @@ li{
 			margin-top: 25px;
 		}
 		.advertising{
-			text-align: center
+			overflow: hidden;
+			position: relative;
 		}
-		.advertising>a>img{
+		.advertising>ul{
+			width: 12160px;	
+	 		animation-name: advertising-ani;
+			animation-duration: 10s;
+			 animation-direction: normal;
+			animation-iteration-count: infinite; 
+			animation-timing-function: steps(8);
+		}
+		@keyframes advertising-ani{
+			0%{
+					margin-left: 0px;
+			}
+			100%{
+					margin-left: -12160px;
+			}
+		}		
+		.advertising a>img{
 			width: 1520px; 
-			
+					
 		}
+		/* .or-so{
+			position: absolute;
+			top: 150px;
+			width: 100%;
+
+		}
+		.or-so>a:nth-child(1) i{
+			float: left;
+			font-size: 4em;
+			color: #d0c3b2;
+			margin-left: 100px;
+		}
+		.or-so>a:nth-child(2) i{
+			float: right;
+			font-size: 4em;
+			color: #d0c3b2;
+			margin-right: 100px;
+
+		}
+		.or-so>a:hover>i{
+			color: #7c724e;
+		}*/
+.new-goods .zuo-icon,.advertising .zuo-icon{
+	      position: absolute;
+			font-size: 4em;
+			color: #d0c3b2;
+			left: 100px;
+			top: 150px;
+}
+.new-goods .you-icon,.advertising .you-icon{
+
+			position: absolute;
+			top: 150px;
+			font-size: 4em;
+			color: #d0c3b2;
+			right: 100px;
+}
+.new-goods i:hover,.advertising i:hover{
+	color: #7c724e;
+	cursor: pointer;
+}
 		.secondary-menu{
 			position: absolute;
 			background-color: #ffffff;
@@ -254,15 +314,53 @@ li{
 		.right-advertising>ul>li:hover .advertising-prompt{
 			display: block;
 		}
-		.advertising-prompt{
-			width: 250px;
-			height: 100px;
-			background-color: pink;
+.advertising-prompt{
+			width: 300px;
+			background-color: #ffffff;
 			position: absolute;
 			top: 0px;
 			right: 80px;
 			display: none;
+			border: 1px solid #f8f1eb;
+
 		}
+.advertising-prompt>div:nth-child(1){
+	font-size: 1.4em;
+	line-height: 1.4em;
+	padding: 15px;
+	color: #ffffff;
+	background-color: #d0c3b2;
+}
+.advertising-prompt>div:nth-child(2){
+	margin: 10px;
+	font-size: 12px;
+	color: #888888;
+	line-height: 12px;
+}
+.advertising-prompt>div:nth-child(3)>input{
+			height: 20px;
+			font-size: .9em;
+			line-height: 1.2em;
+			padding-left: 5px;
+}
+.advertising-prompt>div:nth-child(3)>button{
+			height: 26px;
+			border: none;
+			background-color: #d9c7a2;
+			font-size: .9em;
+			line-height: 1.2em;
+			color: #ffffff;
+}
+.advertising-prompt>div:nth-child(4){
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.advertising-prompt>div:nth-child(4)>ul>li{
+	width: 100px;
+	text-align: center;
+	font-size: 12px;
+	color: #7c724e;
+}
 		.right-advertising>ul li:nth-child(2) div{
 			color: #7c724e;
 			text-align: center;
@@ -276,7 +374,7 @@ li{
 			margin-top: 5px;
 			color: #666666;
 		}
-		.right-advertising>ul li:nth-child(2)~li{
+		.right-advertising>ul>li:nth-child(2)~li{
 			border-top: 1px solid #999999;
 
 		}
@@ -379,21 +477,41 @@ li{
 
 		}
 		.manufacturers-right-li-div::after{
-			content: "";
+				content: "";
 				display: block;
 				clear: both;
 		}
-		.product-1 .new-goods-ul>li{
+.product-1 .new-goods-ul li{
 			width: 265px;
 			height: 350px;
-			background-color: #76c79c;
+			background-color: #ffffff;
 			margin-right: 10px;
 		}
 
-		.new-goods{
+.product-1 .new-goods-ul li:hover .img-2{
+			display: block;
+		}
+.product-1 .new-goods-ul li:hover .img-1 {
+			display: none;
+		}
+.product-1 .new-goods-ul li:hover {
+			background-color: #f5eee8;
+		}
+.new-goods-ul .img-2{
+	margin-bottom: 4px;
+ 	display: none;
+ }
+.new-goods{
 			margin-top: 40px;
+			position: relative;
 		}
 
+.new-goods .zuo-icon{
+	left: -80px;
+}
+.new-goods .you-icon{
+	right: -80px;
+}
 		.recommended{
 			background-color: #f8f1eb;
 			margin-top: 20px;
@@ -1001,10 +1119,7 @@ padding-bottom: 40px;
 }
 .registered-way>div:nth-child(2){
 	width: 160px;
-	
-	
 	margin-left: 40px;
-
 }
 .registered-way>div:nth-child(2) li{
 	text-align: center;

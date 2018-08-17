@@ -3,7 +3,7 @@ function login_page_state(){
 	var page=document.getElementById("login-page")
 	var registered_1 = document.getElementById("registered")
 	var mobile_phone = document.getElementById("login")
-	if (page.style.display=='none') {
+	if (!page.style.display||page.style.display=='none') {
 		page.style.display='block';
 		mobile_phone.style.display='block';
 		mobile_phone_login();

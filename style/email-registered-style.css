@@ -141,11 +141,10 @@ input:focus { outline: none; }
 .form-input-box>button{
 	width: 135px;
 	font-size: 1.1em;
-	
 	background-color: #c7e3fa;
 	border: none;
-	height: 46px;
-	line-height: 46px;
+	height: 40px;
+	line-height: 38px;
 	border-radius: 3px;
 }
 button>a{
@@ -153,6 +152,7 @@ button>a{
 	display: block;
 	width: 100%;
 	height: 100%;
+
 }
 .registered-btn{
 	width: 320px;
